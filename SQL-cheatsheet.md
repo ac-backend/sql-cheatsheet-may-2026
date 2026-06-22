@@ -58,11 +58,12 @@ CREATE TABLE friends (
 ### 5. `DELETE FROM` — assigned to: Hailey
 
 **Description:**
-
+Removes one or more rows from a table based on a condition.
 **Example:**
 
 ```sql
-
+DELETE FROM table_name
+WHERE condition;
 ```
 
 ### 6. `GROUP BY` — assigned to: Jana

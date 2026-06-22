@@ -38,11 +38,14 @@ CREATE TABLE friends (
 ### 3. `INSERT INTO` — assigned to: Arianne
 
 **Description:** 
+`GROUP BY` groups rows that have the same values in specified columns into summary rows. It's typically used together with aggregate functions (like `COUNT`, `SUM`, `AVG`, `MAX`, `MIN`) to calculate values for each group instead of for the whole table.
 
 **Example:**
 
 ```sql
-
+SELECT genre, COUNT(*) AS movie_count
+FROM movies
+GROUP BY genre;
 ```
 
 ### 4. `UPDATE` — assigned to: Carlotta

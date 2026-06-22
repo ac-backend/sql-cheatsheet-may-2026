@@ -88,7 +88,7 @@ CREATE TABLE friends (
 ### 8. `INNER JOIN` — assigned to: Morgan
 
 **Description:**
-
+git6 
 **Example:**
 
 ```sql

@@ -124,12 +124,14 @@ CREATE TABLE friends (
 
 ```
 
-### 12. `COUNT` — assigned to _____
+### 12. `COUNT` — assigned to Phil
 
-**Description:** 
+**Description:** Counts the number of rows in a column
 
 **Example:**
 
 ```sql
-
+SELECT COUNT(*)
+FROM fake_apps
+WHERE price = 0;
 ```

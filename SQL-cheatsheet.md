@@ -61,11 +61,12 @@ WHERE name = 'Carlotta';
 ### 5. `DELETE FROM` — assigned to: Hailey
 
 **Description:**
-
+Removes one or more rows from a table based on a condition.
 **Example:**
 
 ```sql
-
+DELETE FROM table_name
+WHERE condition;
 ```
 
 ### 6. `GROUP BY` — assigned to: Jana
@@ -127,12 +128,14 @@ WHERE name = 'Carlotta';
 
 ```
 
-### 12. `COUNT` — assigned to _____
+### 12. `COUNT` — assigned to Phil
 
-**Description:** 
+**Description:** Counts the number of rows in a column
 
 **Example:**
 
 ```sql
-
+SELECT COUNT(*)
+FROM fake_apps
+WHERE price = 0;
 ```

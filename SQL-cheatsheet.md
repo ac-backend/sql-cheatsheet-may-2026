@@ -117,11 +117,13 @@ CREATE TABLE friends (
 ### 11. `LIKE` — assigned to: Ysabel
 
 **Description:**
-
+LIKE is used in a WHERE clause to search for a pattern in text data it helps find rows where a column contains and starts with or ends with certain letters or words.
 **Example:**
 
 ```sql
-
+SELECT *
+FROM customers
+WHERE email LIKE '%gmail.com';
 ```
 
 ### 12. `COUNT` — assigned to _____

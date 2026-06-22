@@ -38,11 +38,16 @@ CREATE TABLE friends (
 ### 3. `INSERT INTO` — assigned to: Arianne
 
 **Description:** 
-
+INSERT INTO is used in SQL to add new rows (records) to a table.
+Think of INSERT INTO as saying: "Add this new record to the table."
 **Example:**
 
 ```sql
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
 
+INSERT INTO pets (name, age, species)
+VALUES ('Whiskers', 2, 'Cat');
 ```
 
 
@@ -93,20 +98,34 @@ WHERE condition;
 
 **Description:**
 
+An INNER JOIN returns only the rows that have matching values in both tables. Rows without a match in either table are excluded from the result.
+
 **Example:**
 
 ```sql
-
+SELECT
+    customers.customer_name,
+    orders.order_id
+FROM customers
+INNER JOIN orders
+    ON customers.customer_id = orders.customer_id;
 ```
 
 ### 9. `LIMIT` — assigned to: Seth
-**Description:**
+**Description:** LIMITS the number of values that are shown
 
 **Example:**
 
 ```sql
-
+SELECT * 
+FROM friends 
+WHERE birthday DATE >= 19800101
+LIMIT 5;
 ```
+<!-- CREATE TABLE friends (
+  friend_id SERIAL PRIMARY KEY,
+  name VARCHAR,
+  birthday DATE -->
 
 ### 10. `ON CONFLICT` — assigned to: Shirley
 

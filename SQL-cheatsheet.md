@@ -53,7 +53,7 @@ VALUES ('Whiskers', 2, 'Cat');
 
 ### 4. `UPDATE` — assigned to: Carlotta
 
-**Description:** `UPDATE` is used to modify existing data in a table. It changes the value of one or more columns for rows that match a specified condition. It is important to set the 'WHERE' clause when updating so that every row in the table is affected by the change.
+**Description:** `UPDATE` is used to modify existing data in a table. It changes the value of one or more columns for rows that match a specified condition. It is important to set the 'WHERE' clause when updating so that every row in the table is not affected by the change.
 
 **Example:**
 

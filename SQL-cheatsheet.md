@@ -89,9 +89,13 @@ GROUP BY genre;
 
 ### 7. `ORDER BY` — assigned to: Zesty Pepper
 
-**Description:**
+**Description:** (from W3)
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
 
+The ORDER BY keyword sorts the result-set in ascending order (ASC) by default.
 **Example:**
+SELECT * FROM Products
+ORDER BY Price;
 
 ```sql
 

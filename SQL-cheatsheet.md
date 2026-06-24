@@ -132,12 +132,17 @@ LIMIT 5;
 
 ### 10. `ON CONFLICT` — assigned to: Shirley
 
-**Description:**
+**Description:** ON CONFLICT, also known as upsert, allows users to skip or update rows that conflict against constraints such as unique or primary key.
 
 **Example:**
 
 ```sql
-
+INSERT INTO users (email, name, login_count) 
+VALUES ('user@example.com', 'Alex', 1)
+ON CONFLICT (email) 
+DO UPDATE SET 
+    name = EXCLUDED.name,
+    login_count = users.login_count + 1;
 ```
 
 ### 11. `LIKE` — assigned to: Ysabel
